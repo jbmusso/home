@@ -28,7 +28,10 @@ PS1_RESET='\[\033[00m\]'  # arrête la couleur
 # Show unstaged (*) and staged (+) changes in __git_ps1
 export GIT_PS1_SHOWDIRTYSTATE=true
 
-PS1='\u@'$PS1_YELLOW'\h'$PS1_RESET'\w'$PS1_GREEN'$(__git_ps1)'$PS1_RESET'\$ '
+# Changeout titlebar :-]
+#TITLEBAR="\[\e]2;\w\a\]"
+
+PS1=$TITLEBAR'\u@'$PS1_YELLOW'\h'$PS1_RESET'\w'$PS1_GREEN'$(__git_ps1)'$PS1_RESET'\$ '
 
 #################### COLORED MAN ######################################
 # less env variables to make less a bit nicer to read
